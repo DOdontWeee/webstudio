@@ -1,0 +1,14 @@
+.img {
+  font-family: 'Raleway', bold;
+  font-weight: 700;
+}
+body {
+    font-family: 'roboto';
+}
+
+a:hover {
+  color: #2196F3;
+}
+.bold {
+    font-family: 'roboto', bold;
+}
