@@ -4,6 +4,7 @@
 }
 body {
     font-family: 'roboto';
+    color: #212121;
 }
 
 a:hover {
@@ -11,4 +12,19 @@ a:hover {
 }
 .bold {
     font-family: 'roboto', bold;
+} 
+.end {
+  color: #FFFFFF99;
+  background-color: #2F303A;
+}
+p {
+  color: #757575 ;
+}
+
+header > address {
+    color: #757575;
+}
+.white {
+  color: white;
+  background-color: #2F303A;
 }
