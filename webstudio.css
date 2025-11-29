@@ -35,11 +35,11 @@ list-style: none;
 .header-address-list:hover a {
     color: #2196f3;
 }
-.section1 {
+.decitions {
 background: #2f303a;
 }
 
-.section1-tytle {
+.decitions-tytle {
     font-family: "raleway";
 font-weight: 900;
 font-size: 44px;
@@ -48,7 +48,7 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #fff;
 }
-.section1-button {
+.decitions-button {
     font-family: "raleway";
 font-weight: 700;
 font-size: 16px;
@@ -62,10 +62,10 @@ height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #2196f3 
 }
-.section2-list {
+.details-list {
     list-style: none;
 }
-.section2-littletytle {
+.details-littletytle {
     font-family: "raleway";
 font-weight: 700;
 font-size: 14px;
@@ -74,7 +74,7 @@ text-transform: uppercase;
 color: #212121;
 font-style: bold;
 }
-.section2-text {
+.details-text {
     font-family: "roboto";
 font-weight: 400;
 font-size: 14px;
@@ -82,10 +82,10 @@ line-height: 171%;
 letter-spacing: 0.03em;
 color: #757575;
 }
-.section3-list {
+.details-list {
     list-style: none;
 }
-.section3-littletytle {
+.doing-littletytle {
     font-family: "roboto";
 font-weight: 700;
 font-size: 36px;
@@ -94,15 +94,15 @@ text-align: center;
 color: #212121;
 font-style: bold;
 }
-.section3-item {
+.doing-item {
     width: 370px;
 height: 294px;
 }
-.section4 {
+.team {
     background: #f5f4fa;
 }
 
-.section4-littletytle {
+.team-littletytle {
     font-family: "roboto";
 font-weight: 700;
 font-size: 36px;
@@ -111,19 +111,19 @@ text-align: center;
 color: #212121;
 font-style: bold;
 }
-.section4-item{
+.team-item{
     border-radius: 0 0 4px 4px;
 width: 270px;
 height: 368px;
 list-style: none;
 background-color: #fff;
 }
-.section4-img {
+.team-img {
     width: 270px;
 height: 260px;
 }
 
-.section4-smallertytle {
+.team-smallertytle {
     font-family: "roboto";
 font-weight: 500;
 font-size: 16px;
@@ -131,7 +131,7 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
 }
-.section4-text {
+.team-text {
     font-family: "roboto";
 font-weight: 400;
 font-size: 16px;
@@ -162,7 +162,7 @@ line-height: 171%;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-.section5-button {
+.buttons-button {
     font-family: "roboto";
 font-weight: 500;
 font-size: 16px;
@@ -171,10 +171,10 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
 }
-.section6-list {
+.buttons-list {
     list-style: none;
 }
-.section6-little{
+.sites-little{
     font-family: "roboto";
 font-weight: 700;
 font-size: 18px;
@@ -182,7 +182,7 @@ line-height: 200%;
 letter-spacing: 0.06em;
 color: #212121;
 }
-.section6-text{
+.sites-text{
     font-family: "roboto";
 font-weight: 400;
 font-size: 16px;
@@ -217,7 +217,13 @@ font-weight: 700;
 font-size: 26px;
 letter-spacing: 0.03em;
 color: rgb(255, 255, 255);  
+
 }
+
+
+
+
+
 
 .header-container {
     display: flex;
@@ -253,12 +259,12 @@ color: rgb(255, 255, 255);
     justify-content: center;
     flex-direction: column;
 }
-.section1-tytle {
-      width: 696px;
+.decitions-tytle {
+  max-width: 696px;
   height: 120px;
   margin-bottom: 30px;
 }
-.section1-button {
+.decitions-button {
     width: 216px;
     height: 50px;
 }
@@ -266,32 +272,32 @@ color: rgb(255, 255, 255);
     width: 1170px;
     height: 98px;
 }
-.section2 {
+.details {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section2-list {
+.details-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-.section2-item {
+.details-item {
     width: 270px;
     height: 98px;
 }
-.section3-littletytle {
+.doing-littletytle {
     margin-bottom: 50px;
 }
-.section3-list {
+.doing-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
     padding: 94px;
 }
-.section4-littletytle {
+.team-littletytle {
     padding: 94px;
 }
-.section4-list {  
+.team-list {  
     display: flex;
     align-items: center;    
     gap: 30px; 
@@ -303,4 +309,17 @@ color: rgb(255, 255, 255);
     display: flex;
     justify-content: center; 
     flex-direction: column;  
+}
+.webstudio2 {
+    margin-bottom: 20px;
+}
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.buttons-list {
+    height: 54px;
+    display: flex;
+    align-items: center
 }
