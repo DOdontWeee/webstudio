@@ -32,7 +32,7 @@ color: #757575;}
 list-style: none;
 }
 
-.header-address-list:hover a {
+.header-address-list a:hover {
     color: #2196f3;
 }
 .decitions {
@@ -174,6 +174,15 @@ color: #212121;
 .buttons-list {
     list-style: none;
 }
+.buttons-button{
+    font-family: "roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+letter-spacing: 0.03em;
+text-align: center;
+color: black;
+}
 .sites-little{
     font-family: "roboto";
 font-weight: 700;
@@ -225,6 +234,10 @@ color: rgb(255, 255, 255);
 
 
 
+
+
+
+
 .header-container {
     display: flex;
     align-items: center;   
@@ -250,24 +263,45 @@ color: rgb(255, 255, 255);
     gap: 50px;
 }
 
+.decitions {
+    background-color: #2F303A;
+    min-height: 600px;        
+    display: flex;      
+    align-items: center;    
+    justify-content: center;   
+}
 
 .decitions-container {
-    width: auto;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    text-align: center;
 }
+
 .decitions-tytle {
-  max-width: 696px;
-  height: 120px;
-  margin-bottom: 30px;
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
+
 .decitions-button {
+    background-color: #2196F3;
+    color: #ffffff;
     width: 216px;
     height: 50px;
+    border: none;
+    border-radius: 4px;
 }
+
+.decitions-container {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
 .little-container {
     width: 1170px;
     height: 98px;
@@ -292,7 +326,11 @@ color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding: 94px;
+    padding-bottom: 94px;
+}
+.doing-item {
+    width: 370px;
+    height: 294px;
 }
 .team-littletytle {
     padding: 94px;
@@ -301,7 +339,7 @@ color: rgb(255, 255, 255);
     display: flex;
     align-items: center;    
     gap: 30px; 
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .container-footer {
     height: 252px;
@@ -311,15 +349,87 @@ color: rgb(255, 255, 255);
     flex-direction: column;  
 }
 .webstudio2 {
-    margin-bottom: 20px;
+    padding-top: 60px;
 }
 .footer-address {
     display: flex;
     flex-direction: column;
     gap: 9px;
+    margin-top: 20px;
 }
 .buttons-list {
     height: 54px;
     display: flex;
-    align-items: center
+    justify-content: center;
+    gap: 8px;
 }
+.buttons-item {
+
+    border: 1px solid transparent;
+    background: #f5f4fa;
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 93px;
+    margin-bottom: 50px;
+}
+
+.buttons-item a {
+    color: #212121;
+    text-decoration: none;
+    font-weight: 500;
+}
+.buttons-item:hover {
+    background-color: #2196F3;
+}
+
+.buttons-item:hover * {
+    color: white;
+}
+.sites {
+    margin-top: 50px;
+    margin-bottom: 95px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sites-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.sites-item {
+    width: 370px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+
+.sites-img {
+    width: 100%;
+    display: block;
+}
+
+.sites-little {
+    margin: 20px 24px 10px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.sites-text {
+    margin: 0 24px 20px 24px;
+    font-size: 16px;
+    color: #757575;
+}
+
+
