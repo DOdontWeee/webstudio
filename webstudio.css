@@ -306,9 +306,39 @@ color: rgb(255, 255, 255);
     width: 1170px;
     height: 98px;
 }
+.details-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  border-radius: 4px;
+}
+.details-item:nth-child(1)::before {
+  background-image: url("./img/antenna.png");
+}
+
+.details-item:nth-child(2)::before {
+  background-image: url("./img/clock.png");
+}
+
+.details-item:nth-child(3)::before {
+  background-image: url("./img/diagram.png");
+}
+
+.details-item:nth-child(4)::before {
+  background-image: url("./img/austranaut.png");
+}
+
 .details {
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-bottom: 94px;
 }
 .details-list {
     display: flex;
@@ -319,6 +349,8 @@ color: rgb(255, 255, 255);
     width: 270px;
     height: 98px;
 }
+
+
 .doing-littletytle {
     margin-bottom: 50px;
 }
