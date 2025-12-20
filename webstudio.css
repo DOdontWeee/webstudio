@@ -36,8 +36,17 @@ list-style: none;
     color: #2196f3;
 }
 .decitions {
-background: #2f303a;
+  background-image:
+    linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("./img/people.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 
 .decitions-tytle {
     font-family: "raleway";
