@@ -153,11 +153,12 @@ background: #fff;
     width: 270px;
 height: 260px;
 }
-.goup-team-icon {
+.group-team-icon {
     display: flex;
-    justify-content: center;
     padding-top: 23px;
-    gap: 20px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
 }
 .team-icon {
     fill: #AFB1B8;
@@ -167,9 +168,25 @@ height: 260px;
 .team-icon:hover {
     fill: #fff;
     background-color: #2196F3;
-    border-radius: 50%;
 }
-
+.team-item2 {
+        width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-item2:hover {
+    width: 44px;
+    height: 44px;
+    background-color: #2196F3;
+    border-radius: 50%;
+.team-icon{
+    fill: #fff;
+    background-color: #2196F3;
+}
+}
 .team-smallertytle {
     font-family: "roboto";
 font-weight: 500;
@@ -191,8 +208,16 @@ color: #757575;
 }
 .footer {
     background: #2f303a;
+    min-height: 252px;
 }
-
+.footer-text {
+    font-family: "roboto";
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
 .footer-address-text {
     font-family: "roboto";
 font-weight: 400;
@@ -437,9 +462,14 @@ color: #212121;
 }
 .client-list {
     display: flex;
+    gap: 30px;
 }
 .container-client{
     display: flex;
+    flex-direction: column;
+}
+.client-text {
+    margin-bottom: 50px;
 }
 .client-icon {
 width: 106px;
@@ -455,13 +485,32 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.border-client:hover {
+        border: 1px solid #2196F3;
+.client-icon {
+    fill: #2196F3;
+}
+}
+.footer-icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+.border-footer {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-footer:hover {
+    background-color: #2196F3;
+}
 
 .container-footer {
-    height: 252px;
-    width: auto;
     display: flex;
-    justify-content: center; 
-    flex-direction: column;  
 }
 .webstudio2 {
     padding-top: 60px;
@@ -471,6 +520,20 @@ justify-content: center;
     flex-direction: column;
     gap: 9px;
     margin-top: 20px;
+}
+.footer-icons-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+.footer-list {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+.container-footer {
+    display: flex;
 }
 .buttons-list {
     height: 54px;
