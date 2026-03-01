@@ -121,19 +121,6 @@ color: #757575;
 .details-list {
     list-style: none;
 }
-.doing-littletytle {
-    font-family: "roboto";
-font-weight: 700;
-font-size: 36px;
-letter-spacing: 0.03em;
-text-align: center;
-color: #212121;
-font-style: bold;
-}
-.doing-item {
-    width: 370px;
-height: 294px;
-}
 .team {
     background: #f5f4fa;
 }
@@ -182,17 +169,19 @@ height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .team-item2:hover {
     width: 44px;
     height: 44px;
     background-color: #2196F3;
-    border-radius: 50%;
+    border-radius: 50%; 
 .team-icon{
     fill: #fff;
     background-color: #2196F3;
 }
 }
+
 .team-smallertytle {
     font-family: "roboto";
 font-weight: 500;
@@ -432,20 +421,57 @@ color: rgb(255, 255, 255);
     width: 270px;
     height: 98px;
 }
-
+.doing {
+  padding-top: 94px;
+}
 
 .doing-littletytle {
-    margin-bottom: 50px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
 }
+
 .doing-list {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding-bottom: 94px;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
 }
+
 .doing-item {
-    width: 370px;
-    height: 294px;
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.doing-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.doing-text {
+    font-family: "roboto";
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
 }
 .team-littletytle {
     padding-top: 94px;
@@ -459,14 +485,9 @@ color: rgb(255, 255, 255);
 }
 .team-smallertytle {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
-.team-text {
-    padding-bottom: 10px;
-}
-.group-team-icon {
-    padding-bottom: 30px;
-}
+
 .client-text {
     font-family: "roboto";
 font-weight: 700;
@@ -575,7 +596,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 93px;
+    margin-top: 94px;
     margin-bottom: 50px;
 }
 
