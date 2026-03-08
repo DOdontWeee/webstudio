@@ -57,7 +57,7 @@
     <section class="decitions">
       <div class="container decitions-container">
         <h1 class="decitions-tytle">Ефективні рішення для вашого бізнесу</h1>
-        <button class="decitions-button">Замовити послугу</button>
+        <button data-modal-open class="decitions-button">Замовити послугу</button>
       </div>
     </section>
     <section class="doing">
@@ -297,6 +297,46 @@
       </div>
     </footer>
   </main>
+  <div data-modal class="backdrop is-hidden">
+    <div class="modal">
+      <button data-modal-close type="button" class="modal-btn">
+        <svg class="modal-icon">
+          <use href="./img/symbol-defs.svg#icon-x">
+          </use>
+        </svg>
+      </button>
+      <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+      <form class="modal-form">
+        <label class="modal-label">ім'я
+          <input minlength="2" maxlength="30" class="modal-input" type="text">
+          <svg class="modal-pic">
+            <use href="./img/symbol-defs.svg#icon-person"></use>
+          </svg>
+        </label>
+        <label class="modal-label">Телефон
+          <input minlength="16" pattern="^\+38\s0\d{2}\s\d{3}\s\d{2}\s\d{2}$" placeholder="+38 091 767 77 77" class="modal-input" type="tel">
+          <svg class="modal-pic">
+            <use href="./img/symbol-defs.svg#icon-phone"></use>
+          </svg>
+        </label>
+        <label class="modal-label">Пошта
+          <input minlength="8" required class="modal-input" type="email">
+          <svg class="modal-pic">
+            <use href="./img/symbol-defs.svg#icon-Envelope-"></use>
+          </svg>
+        </label>
+        <label class="modal-label">Коментар
+          <textarea placeholder="Введіть текст" class="modal-comment"></textarea>
+        </label>
+        <div class="modal-box"> <input required class="modal-check" type="checkbox">
+          <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
+          <a class="modal-link" href=".">Умови договору</a>
+        </div>
+        <button class="submit-btn" type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>
