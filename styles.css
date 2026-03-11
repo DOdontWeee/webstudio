@@ -786,7 +786,32 @@ margin-left: 12px;
     font-size: 16px;
     color: #757575;
 }
-
+.sites-box {
+    position: relative;
+    overflow: hidden;
+}
+.sites-overlay {
+    font-family: "roboto";
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 250ms ;
+}
+.sites-box:hover .sites-overlay {
+    transform: translateY(0);
+}
 /* вікно */
 .backdrop {
     background-color: rgba(0, 0, 0, 0.524);
