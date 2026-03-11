@@ -637,12 +637,9 @@
 
 .container-footer {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
-.webstudio2 {
-    padding-top: 60px;
-}
 
 .footer-address {
     display: flex;
@@ -655,7 +652,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 70px;
-    margin-top: 70px;
 }
 
 .footer-list {
@@ -700,8 +696,7 @@ margin-left: 12px;
     fill: #fff;
 }
 .footer-div {
-    margin-left: 92px;
-    margin-top: 72px;
+    margin-left: auto;
 }
 
 .container-footer {
