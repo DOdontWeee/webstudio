@@ -107,7 +107,8 @@
     width: 216px;
     height: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #2196f3
+    background: #2196f3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .details-list {
@@ -177,11 +178,11 @@
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon:hover {
     fill: #fff;
-    background-color: #2196F3;
 }
 
 .team-item2 {
@@ -191,7 +192,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item2:hover {
@@ -362,8 +363,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.header-icon,
+.header-icon2 {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-address-list {
     display: flex;
     align-items: center;
@@ -385,7 +390,9 @@
     color: #212121;
     padding: 32px 0;
     display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-link::after {
     content: "";
     position: absolute;
@@ -396,7 +403,7 @@
     background-color: #2196F3;
     border-radius: 2px;
     opacity: 0;
-    transition: opacity 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover::after {
     opacity: 1;
@@ -595,6 +602,7 @@
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-client {
@@ -605,6 +613,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-client:hover {
@@ -629,6 +638,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-footer:hover {
@@ -723,6 +733,7 @@ margin-left: 12px;
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-item a {
@@ -802,8 +813,9 @@ color: #fff;
     padding: 40px;
     box-sizing: border-box;
     transform: translateY(100%);
-    transition: transform 250ms ;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .sites-box:hover .sites-overlay {
     transform: translateY(0);
 }
@@ -893,6 +905,7 @@ color: #fff;
     margin-top: 4px;
     margin-bottom: 10px;
     padding-left: 42px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -984,4 +997,5 @@ color: #fff;
     top: 28px;
     left: 12px;
     fill: #2F303A;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
