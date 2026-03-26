@@ -1,3 +1,10 @@
+.animate__animated {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: headShake; 
+  animation-duration: 2s;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
