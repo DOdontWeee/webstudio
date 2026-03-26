@@ -1,0 +1,88 @@
+.sites-little {
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.sites-text {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.sites {
+    margin-top: 50px;
+    margin-bottom: 95px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sites-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.sites-item {
+    width: 370px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+}
+
+
+.sites-img {
+    width: 100%;
+    display: block;
+}
+
+.sites-little {
+    margin: 20px 24px 10px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.sites-text {
+    margin: 0 24px 20px 24px;
+    font-size: 16px;
+    color: #757575;
+}
+.sites-box {
+    position: relative;
+    overflow: hidden;
+}
+.sites-overlay {
+    font-family: "roboto";
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sites-box:hover .sites-overlay {
+    transform: translateY(0);
+}

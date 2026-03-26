@@ -1,0 +1,61 @@
+.client-text {
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.container-client {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+}
+
+.container-client {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-text {
+    margin-bottom: 50px;
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.border-client {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.border-client:hover {
+    border: 1px solid #2196F3;
+
+    .client-icon {
+        fill: #2196F3;
+    }
+}

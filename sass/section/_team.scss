@@ -1,0 +1,106 @@
+.team {
+    background: #f5f4fa;
+}
+
+.team-littletytle {
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    font-style: bold;
+}
+
+.team-item {
+    border-radius: 0 0 4px 4px;
+    width: 270px;
+    height: 428px;
+    list-style: none;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+}
+
+.team-img {
+    width: 270px;
+    height: 260px;
+}
+
+.group-team-icon {
+    display: flex;
+    padding-top: 23px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team-icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    transition:  fill ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon:hover {
+    fill: #fff;
+}
+
+.team-item2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-item2:hover {
+    width: 44px;
+    height: 44px;
+    background-color: #2196F3;
+    border-radius: 50%;
+
+    .team-icon {
+        fill: #fff;
+        background-color: #2196F3;
+    }
+}
+
+.team-smallertytle {
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.team-text {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+}
+.team-littletytle {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+.team-smallertytle {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
