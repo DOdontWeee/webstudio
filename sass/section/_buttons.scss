@@ -1,62 +1,51 @@
-.buttons-button {
-    font-family: "roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-}
+.buttons {
 
-.buttons-list {
+  &__list {
     list-style: none;
-}
 
-.buttons-button {
-    font-family: "roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: black;
-}
-.buttons-list {
-    height: 54px;
     display: flex;
     justify-content: center;
     gap: 8px;
-}
 
-.buttons-item {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 
-    border: 1px solid transparent;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    height: 38px;
-    padding: 0 22px;
-
+  &__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
-    transition: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+    height: 38px;
+    padding: 0 22px;
 
-.buttons-item a {
-    color: #212121;
-    text-decoration: none;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #2196f3;
+
+      .buttons__button {
+        color: #fff;
+      }
+    }
+  }
+
+  &__button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: "roboto";
     font-weight: 500;
-}
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
 
-.buttons-item:hover {
-    background-color: #2196F3;
-}
+    color: #212121;
 
-.buttons-item:hover * {
-    color: white;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
