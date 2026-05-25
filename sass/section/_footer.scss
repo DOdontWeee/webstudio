@@ -3,11 +3,38 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  &__container {
+
+  &__form {
     display: flex;
-    align-items: baseline;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
+  &__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+    
+  }
+  &__one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__webstudio {
+    display: flex;
+    flex-direction: row;
+  }
   &__text {
     font-family: "roboto";
     font-weight: 700;
@@ -22,6 +49,7 @@
     flex-direction: column;
     gap: 9px;
     margin-top: 20px;
+    text-align: center;
   }
 
   &__address-text {
@@ -31,6 +59,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #fff;
+    height: 21px;
+    width: 231px;
+    align-items: center;
   }
 
   &__address-link {
@@ -40,12 +71,21 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    width: 232px;
+    height: 21px;
+    text-align: center;
   }
 
   &__icons {
     display: flex;
     flex-direction: column;
-    margin-left: 70px;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 60px;
+
+  @media screen and (min-width:1200px) {
+    align-items: start;
+  }
   }
 
   &__list {
@@ -80,33 +120,45 @@
 
   &__subscribe {
     margin-left: auto;
+    width: 100%;
+  max-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+      margin-top: 60px;
+      align-items: center;
+    }
   }
-
   &__input {
-    width: 358px;
     height: 50px;
+  width: 450px;
 
-    margin-top: 20px;
-    padding-left: 15px;
+    padding-left: 16px;
 
-    border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
 
-    background: transparent;
+    background-color: transparent;
+
     color: rgba(255, 255, 255, 0.6);
 
-    font-family: "roboto";
-    font-size: 16px;
-    line-height: 1.25;
+    outline: none;
 
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    @media screen and (max-width: 1200px) {
+      width: 450px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__btn {
     width: 200px;
     height: 50px;
-
-    margin-left: 12px;
 
     border-radius: 4px;
     background: #2196f3;
@@ -124,7 +176,16 @@
     gap: 10px;
 
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  }
+
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 
   &__svg {
     width: 24px;

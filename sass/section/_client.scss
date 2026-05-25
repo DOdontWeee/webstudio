@@ -21,13 +21,15 @@
     margin-bottom: 50px;
   }
 
-  &__list {
-    display: flex;
-    gap: 30px;
-  }
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
 
   &__border {
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     display: flex;
@@ -46,6 +48,14 @@
         fill: #2196f3;
       }
     }
+
+        @media screen and (min-width:768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width:  170px;
+  }
   }
 
   &__icon {

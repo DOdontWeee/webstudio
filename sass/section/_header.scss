@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 .animate__animated {
   display: inline-block;
   margin: 0 0.5rem;
@@ -6,12 +7,30 @@
   animation-duration: 2s;
 }
 .header {
-  border-bottom: 1px solid black;
+  padding: 10px 0;
+  border-bottom: 1px solid $portfolio-line;
+
+    @media screen and (min-width:768px) {
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 25px 0;
+  }
+
 
   &__container {
     display: flex;
     align-items: center;
     height: 80px;
+  }
+  
+  &__nav {
+    display: none;
+
+    @media screen and (min-width:768px) {
+      display: block;
+    }
   }
 
   &__list {
@@ -19,7 +38,11 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    padding-left: 91px;
+    margin-left: 87px;
+
+    @media screen and (min-width:1200px) {
+      margin-left: 92px;
+    }
 
     a {
       font-family: "roboto";
@@ -64,15 +87,26 @@
   }
 
   &__address {
+    display: none;
     font-style: normal;
     margin-left: auto;
+
+    @media screen and (min-width:768px) {
+      display: block;
+    }
   }
 
   &__address-list {
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 50px;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width:1200px) {
+      flex-direction: row;
+      gap: 30px;
+    }
 
 
     a {
@@ -129,15 +163,23 @@
   &__web {
     font-family: "raleway";
 font-weight: 700;
-font-size: 26px;
+font-size: 24px;
 letter-spacing: 0.03em;
 color: #2196f3;
+
+@media screen and (min-width:768px) {
+  font-size: 26px;
+}
   }
 &__studio {
   font-family: "raleway";
 font-weight: 700;
-font-size: 26px;
+font-size: 24px;
 letter-spacing: 0.03em;
 color: #212121;
+
+@media screen and (min-width:768px) {
+  font-size: 26px;
+}
 }
 }
